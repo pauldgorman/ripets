@@ -4,6 +4,7 @@
 - ~~add an about section~~
 - write a good about section
 - make contact button actually send an email
+  -- setup an smtp server
 - add some sample death notices
 - add ways to share the notices
 - add sign-up/login
