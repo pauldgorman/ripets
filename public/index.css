@@ -15,6 +15,8 @@ body {
 }
 
 body .main-image {
+  width: 640;
+  height: 360;
   text-align: center;
   margin-top: 20px;
   max-width: 100%;
