@@ -17,9 +17,26 @@
   </head>
 
   <body>
-    <div class="main-image">
+    <div class="main-image" style=" width: 640px;height: 360px;">
       <img src="./images/ripets.svg" alt="Top Image" />
     </div>
+
+
+    <div class="memorial-gallery">
+      <div class="memorial-item">
+        <img src="./images/pets/pet001.jpg" alt="In memory of Bella" />
+        <p>In loving memory of Bella, our loyal companion. Forever in our hearts.</p>
+      </div>
+      <div class="memorial-item">
+        <img src="./images/pets/pet002.jpg" alt="In memory of Max" />
+        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
+      </div>
+      <div class="memorial-item">
+        <img src="./images/pets/pet003.jpg" alt="In memory of Daisy" />
+        <p>Daisy, your love and warmth will never be forgotten. Always cherished.</p>
+      </div>
+    </div>
+
   </body>
 
   <footer>
@@ -42,17 +59,19 @@
       <div class="modal-content">
         <span id="closeModal" class="modal-close">&times;</span>
         <h2>Contact Us</h2>
-        <form>
+        <form method="POST" action="send-email.php" id="contactForm">	
 
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your name.." autocomplete="name"  />
 
-          <label for="email" autocomplete="email">Email</label>
+          <label for="email">Email</label>
           <input
             type="email"
             id="email"
             name="email"
             placeholder="Your email.."
+            autocomplete="email"
+            required
           />
 
           <label for="message">Message</label>
