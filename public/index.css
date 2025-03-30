@@ -1,11 +1,13 @@
+/* BODY */
 body {
   background-color: #d8d4c9;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 60vh;
   margin: 0;
-  flex: 1;
 }
+
+/* HEADER */
 
 @media (max-width: 768px) {
   img {
@@ -15,17 +17,70 @@ body {
 }
 
 body .main-image {
+  width: 640;
+  height: 360;
   text-align: center;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   max-width: 100%;
   height: auto;
 }
 
-footer {
-  margin: 20px auto 0; /* Centers the footer horizontally */
+/* GALLERY */
+
+.memorial-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  /* border-top: 2px solid #ccc; */
+}
+
+.memorial-item {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 15px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.memorial-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.memorial-item img {
   max-width: 100%;
-  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.memorial-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.memorial-item p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Optional: Set background color */
+  text-align: center; /* Optional: Center content */
+  padding: 10px; /* Optional: Add padding */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
 }
 
 footer button {
@@ -87,48 +142,4 @@ footer .modal-content textarea {
   border-radius: 5px;
   height: 100px;
   resize: none;
-}
-
-.memorial-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-top: 2px solid #ccc;
-}
-
-.memorial-item {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.memorial-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-}
-
-.memorial-item img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.memorial-item h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin: 10px 0;
-}
-
-.memorial-item p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.5;
 }
