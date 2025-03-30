@@ -13,19 +13,20 @@
     <link rel="icon" href="./images/ripets_icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./index.css" />
     <script type="module" src="./scripts/modalHandler.js" defer></script>
-
   </head>
 
   <body>
-    <div class="main-image" style=" width: 640px;height: 360px;">
-      <img src="./images/ripets.svg" alt="Top Image" />
-    </div>
-
-
+    <header>
+      <div class="main-image">
+        <img src="./images/ripets.svg" alt="Top Image" />
+      </div>
+    </header>
     <div class="memorial-gallery">
       <div class="memorial-item">
         <img src="./images/pets/pet001.jpg" alt="In memory of Bella" />
-        <p>In loving memory of Bella, our loyal companion. Forever in our hearts.</p>
+        <p>
+          In loving memory of Bella, our loyal companion. Forever in our hearts.
+        </p>
       </div>
       <div class="memorial-item">
         <img src="./images/pets/pet002.jpg" alt="In memory of Max" />
@@ -33,64 +34,65 @@
       </div>
       <div class="memorial-item">
         <img src="./images/pets/pet003.jpg" alt="In memory of Daisy" />
-        <p>Daisy, your love and warmth will never be forgotten. Always cherished.</p>
-      </div>
-    </div>
-
-  </body>
-
-  <footer>
-    <button id="contactButton">Contact Us</button>
-    <button id="aboutButton">About</button>
-
-    <div id="aboutModal" class="modal">
-      <div class="modal-content">
-        <span class="modal-close" id="closeAboutModal">&times;</span>
-        <h2>About R.I.P.ets</h2>
         <p>
-          R.I.P.ets is a platform dedicated to honoring the memory of beloved
-          pets. We believe that grief is the price we pay for love, and we are
-          here to support you in cherishing those memories.
+          Daisy, your love and warmth will never be forgotten. Always cherished.
         </p>
       </div>
     </div>
 
-    <div id="contactFormModal" class="modal">
-      <div class="modal-content">
-        <span id="closeModal" class="modal-close">&times;</span>
-        <h2>Contact Us</h2>
-        <form method="POST" action="send-email.php" id="contactForm">	
+    <footer>
+      <button id="contactButton">Contact Us</button>
+      <button id="aboutButton">About</button>
 
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name.." autocomplete="name"  />
-
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email.."
-            autocomplete="email"
-            required
-          />
-
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write your message.."
-            maxlength="500"
-            rows="4"
-          ></textarea>
-
-          <button type="submit">Send</button>
-        </form>
+      <div id="aboutModal" class="modal">
+        <div class="modal-content">
+          <span class="modal-close" id="closeAboutModal">&times;</span>
+          <h2>About R.I.P.ets</h2>
+          <p>
+            R.I.P.ets is a platform dedicated to honoring the memory of beloved
+            pets. We believe that grief is the price we pay for love, and we are
+            here to support you in cherishing those memories.
+          </p>
+        </div>
       </div>
-    </div>
+
+      <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+          <span id="closeModal" class="modal-close">&times;</span>
+          <h2>Contact Us</h2>
+          <form method="POST" action="send-email.php" id="contactForm">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+              autocomplete="name"
+            />
+
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email.."
+              autocomplete="email"
+              required
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message.."
+              maxlength="500"
+              rows="4"
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
     </footer>
-  
-
   </body>
-
-
 </html>
