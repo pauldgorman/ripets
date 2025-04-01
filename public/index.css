@@ -1,6 +1,7 @@
 /* BODY */
 body {
   background-color: #d8d4c9;
+  /* background-color: #c9d8d1; */
   display: flex;
   flex-direction: column;
   min-height: 60vh;
@@ -8,6 +9,46 @@ body {
 }
 
 /* HEADER */
+
+.collapsible-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.collapsible-header.collapsed {
+  transform: translateY(-100%);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.header-content nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-content nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
   img {
@@ -33,6 +74,7 @@ body .main-image {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+  margin-top: 70px; /* Adjusted to account for the fixed header */
   /* border-top: 2px solid #ccc; */
 }
 
@@ -48,8 +90,10 @@ body .main-image {
 }
 
 .memorial-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  /* transform: translateY(-5px); */
+  /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); */
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
 }
 
 .memorial-item img {
@@ -70,30 +114,9 @@ body .main-image {
   line-height: 1.5;
 }
 
-/* FOOTER */
+/* MODAL */
 
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff; /* Optional: Set background color */
-  text-align: center; /* Optional: Center content */
-  padding: 10px; /* Optional: Add padding */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
-}
-
-footer button {
-  background-color: #000000;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin: 5px;
-}
-
-footer .modal {
+.modal-container .modal {
   display: none;
   position: fixed;
   top: 0;
@@ -105,7 +128,7 @@ footer .modal {
   align-items: center;
 }
 
-footer .modal-content {
+.modal-container .modal-content {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -114,17 +137,17 @@ footer .modal-content {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-footer .modal-content .modal-close {
+.modal-container .modal-content .modal-close {
   float: right;
   font-size: 20px;
   cursor: pointer;
 }
 
-footer .modal-content .modal-close:hover {
+.modal-container .modal-content .modal-close:hover {
   color: red;
 }
 
-footer .modal-content input {
+.modal-container .modal-content input {
   font-family: inherit;
   width: 90%;
   padding: 10px;
@@ -133,7 +156,7 @@ footer .modal-content input {
   border-radius: 5px;
 }
 
-footer .modal-content textarea {
+.modal-container .modal-content textarea {
   font-family: inherit;
   width: 90%;
   padding: 10px;
