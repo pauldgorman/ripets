@@ -13,41 +13,36 @@
     <link rel="icon" href="./images/ripets_icon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./index.css" />
     <script type="module" src="./scripts/modalHandler.js" defer></script>
+    <script type="module" src="./scripts/headerCollapse.js" defer></script>
   </head>
 
   <body>
-    <header>
-      <div class="main-image">
-        <img src="./images/ripets.svg" alt="Top Image" />
+    <header class="collapsible-header">
+      <div class="header-content">
+        <img
+          src="./images/ripets.svg"
+          alt="R.I.P.ets Icon"
+          class="header-icon"
+          style="width: 50px; height: auto"
+        />
+
+        <h1>R.I.P.ets</h1>
+        <nav>
+          <ul>
+            <li><button id="contactButton">Contact</button></li>
+            <li><button id="aboutButton">About</button></li>
+            <li><button id="addNoticeButton">Add Notice</button></li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <div class="memorial-gallery">
-      <div class="memorial-item">
-        <img src="./images/pets/pet001.jpg" alt="In memory of Bella" />
-        <p>
-          In loving memory of Bella, our loyal companion. Forever in our hearts.
-        </p>
-      </div>
-      <div class="memorial-item">
-        <img src="./images/pets/pet002.jpg" alt="In memory of Max" />
-        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
-      </div>
-      <div class="memorial-item">
-        <img src="./images/pets/pet003.jpg" alt="In memory of Daisy" />
-        <p>
-          Daisy, your love and warmth will never be forgotten. Always cherished.
-        </p>
-      </div>
-    </div>
 
-    <footer>
-      <button id="contactButton">Contact Us</button>
-      <button id="aboutButton">About</button>
-
+    <div class="modal-container">
       <div id="aboutModal" class="modal">
         <div class="modal-content">
           <span class="modal-close" id="closeAboutModal">&times;</span>
           <h2>About R.I.P.ets</h2>
+          <img src="./images/ripets.svg" alt="Top Image" />
           <p>
             R.I.P.ets is a platform dedicated to honoring the memory of beloved
             pets. We believe that grief is the price we pay for love, and we are
@@ -93,6 +88,357 @@
           </form>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <div class="memorial-gallery">
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet001.jpg"
+          alt="In memory of Bella"
+          loading="lazy"
+        />
+        <p>
+          In loving memory of Bella, our loyal companion. Forever in our hearts.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet002.jpg"
+          alt="In memory of Max"
+          loading="lazy"
+        />
+        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet003.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet004.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet005.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet006.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet001.jpg"
+          alt="In memory of Bella"
+          loading="lazy"
+        />
+        <p>
+          In loving memory of Bella, our loyal companion. Forever in our hearts.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet002.jpg"
+          alt="In memory of Max"
+          loading="lazy"
+        />
+        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet003.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet004.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet005.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet006.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet001.jpg"
+          alt="In memory of Bella"
+          loading="lazy"
+        />
+        <p>
+          In loving memory of Bella, our loyal companion. Forever in our hearts.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet002.jpg"
+          alt="In memory of Max"
+          loading="lazy"
+        />
+        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet003.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet004.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet005.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet006.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet001.jpg"
+          alt="In memory of Bella"
+          loading="lazy"
+        />
+        <p>
+          In loving memory of Bella, our loyal companion. Forever in our hearts.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet002.jpg"
+          alt="In memory of Max"
+          loading="lazy"
+        />
+        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet003.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet004.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet005.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet006.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet001.jpg"
+          alt="In memory of Bella"
+          loading="lazy"
+        />
+        <p>
+          In loving memory of Bella, our loyal companion. Forever in our hearts.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet002.jpg"
+          alt="In memory of Max"
+          loading="lazy"
+        />
+        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet003.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet004.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet005.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet006.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet001.jpg"
+          alt="In memory of Bella"
+          loading="lazy"
+        />
+        <p>
+          In loving memory of Bella, our loyal companion. Forever in our hearts.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet002.jpg"
+          alt="In memory of Max"
+          loading="lazy"
+        />
+        <p>Max, your playful spirit brought us endless joy. Rest in peace.</p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet003.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet004.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet005.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+      <div class="memorial-item">
+        <img
+          src="./images/pets/pet006.jpg"
+          alt="In memory of Daisy"
+          loading="lazy"
+        />
+        <p>
+          Daisy, your love and warmth will never be forgotten. Always cherished.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
